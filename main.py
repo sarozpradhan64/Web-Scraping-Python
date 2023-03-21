@@ -13,6 +13,10 @@ for job_element in job_elements:
   title_element = job_element.find("h5")
   company_element = job_element.find("div", class_="text-wrap").find("a")
   
-  print(title_element.text)
-  print(company_element.text)
-  print("-----------------")
+  job_title = title_element.text.strip() #strip() removed whitespaces
+  company_name = company_element.text.strip()
+  print(f"Job Title: {job_title}")
+  print(f"Company: {company_name}")
+  print("-------------------------")
+  print("\n")
+
