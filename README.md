@@ -1,7 +1,29 @@
 ## Scrape All Jobs In Nepal
 
-### Requirements
+## Installation
+
+### Next.js
+``` 
+cd frontend
+npm install
+npm run dev
 ```
-python -m pip install requests
-python -m pip install beautifulsoup4
+### Fast API
+-Note: Virtual env is suggested
+```
+pip install requests
+pip install beautifulsoup4
+pip install fastapi
+pip install "uvicorn[standard]"
+```
+- Or install via requirements.txt
+```
+cd core
+pip install -r requirements.txt
+```
+
+### Run FastApi Server
+```
+cd core
+uvicorn main:app --reload
 ```
