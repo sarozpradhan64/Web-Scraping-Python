@@ -6,3 +6,5 @@ pyproject.toml
 poetry.lock
 .breakpoints
 __pycache__
+
+.idea
